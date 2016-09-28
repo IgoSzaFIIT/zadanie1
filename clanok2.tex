@@ -1,0 +1,96 @@
+\documentclass[a4paper,8pt]{article}
+\usepackage{multicol}
+\usepackage{extsizes}
+\usepackage[margin={1.5cm,1.5cm}]{geometry}
+\setlength\columnsep{30pt}
+
+\begin{document}
+\begin{multicols}{2}
+
+
+\noindent\huge\textbf{ABSTRACT} \\
+
+\noindent Our  work  focuses  on  the  improvement  of  the  accuracy  of
+context-aware recommender systems.  Contextual informa-
+tion showed to be promising factor in recommender systems.
+However, pure context-based recommender systems can not
+outperform  other  approaches  mainly  due  to  high  sparsity
+of contextual information.  We propose an idea to improve
+accuracy of context based recommender systems by context
+inference.   Context  inference  is  based  on  e ect  discovered
+by analyses of the context as a factor influencing user needs.
+Analyses of the news readers reveals existence of behavioural
+correlation which is the main pillar of proposed context infer-
+ence.  Method for context inference is based on collaborative
+ ltering and clustering of web usage (as a non-discretizing
+alternative to association rules mining).
+
+Categories and Subject Descriptors
+H.3 [
+Information Storage and Retrieval
+]: Clustering In-
+formation Filtering;  H.2 [
+Database Applications
+]:  Data
+mining
+General Terms
+Algorithms
+Keywords
+context, recommender system, clustering, user behaviour
+
+\section{MOTIVATION}
+
+Context-aware  recommender  systems  have  become  very
+popular since variety of contextual information could be ac-
+quired.  With an increase of the smart-phone popularity and
+available features which they provide, we are able to asso-
+ciate user needs with contextual information.  From the high
+level context types such as location,  time,  weather,  to the
+low level context types such as humidity, noise, movement,
+.
+we study the impact of the context on the user behaviour and
+needs.  However context itself has shown to be insuffcient
+when  it  comes  to  accuracy  of  context-aware  recommender
+systems.  Context is therefore used as a secondary aspect for
+generating recommendation.
+One  reason  for  low  accuracy  is  high  sparsity  of  contex-
+tual information.  High sparsity is caused by various natures
+of users and their preferences [5].  Some users do not want
+to  share  their  personal  information  such  as  location,  thus
+causing missing contextual information.  Poor context infor-
+mation  leads  to  low  accuracy  in  prediction.   On  the  other
+hand,  some users are willing to expose even personal con-
+textual information such as emotions.  They are willing to
+answer question and explicitly express contextual informa-
+tion, which is then useful in context-aware recommendation.
+Our idea is to propagate contextual information from one
+user to another in order to reduce the sparsity of data.  We
+propose the propagation of the context by exploiting a corre-
+lation in users' behaviour.  We assume that users' behaviour
+is not random,  it is based on context of the user.  For in-
+stance,  Perse  [14]  discovered  association  between  negative
+mood and tendency to watch competition-style programs as
+a result of the need to experience happiness.   Action-style
+programs are selected when viewers are in a positive emo-
+tional  state.   However,  even  if  some  associations  are  valid
+for majority of users, we expect that there are associations
+which could be discovered only for a subset of users.  This
+leads to clustering of users by their behaviour.  Identifying
+clusters of similar users helps to identify how to propagate
+the context between users.
+We  discover  associations  between  the  need  and  context
+using alternative to standard association rules mining.  The
+di erence is in non-discrete values which we use.  For exam-
+ple, wrong discretization causes noise, as we lose the ability
+to compare them and thus sort them. Therefore we expect to
+achieve higher accuracy when we use proposed value based
+associations  discovery  instead  of  item  based.   To  accom-
+plish  value  based  associations  discovery  we  combine  stan-
+dard techniques from machine learning such as
+x
+-means [6]
+and vector distance computation (Euclidean distance)
+
+
+\end{multicols}
+\end{document}
